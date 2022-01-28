@@ -22,5 +22,7 @@ def _syslog(filename,listOfKeywords):
                 #Append results to results list
 
                     results.append(found)
+
+    results = ''.join(results)
     
     return results

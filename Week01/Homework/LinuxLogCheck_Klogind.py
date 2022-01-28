@@ -1,4 +1,5 @@
 import re
+import re
 
 def _syslog(filename,listOfKeywords):
 
@@ -22,5 +23,7 @@ def _syslog(filename,listOfKeywords):
                 #Append results to results list
 
                     results.append(found)
+
+    results = ''.join(results)
     
     return results
