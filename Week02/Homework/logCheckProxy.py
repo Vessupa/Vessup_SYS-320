@@ -2,15 +2,15 @@ import re, sys, yaml
 
 
 # Open the Yaml file
+
+
 try:
 
-    with open('searchTerms.yaml', 'r') as yf:
+    with open('ProxyLogs.yaml', 'r') as yf:
         keywords = yaml.safe_load(yf)
 
 except EnvironmentError as e:
     print(e.strerror)
-
-
 
 def _logs(filename,service, term):
 
