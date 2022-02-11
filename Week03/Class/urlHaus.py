@@ -10,14 +10,16 @@ import csv, re, sys
 
 def urlHausOpen(filename,searchTerm):
 # Open the urlHaus file
-    with open('urlHausTestDataSet.csv,','rt')as f:
+    with open('../../Logs/urlHausTestDataSet.csv')as f:
         contents = csv.reader(f)
-        #for row in contents:
-            #for _ in range(9):
+        # Skips over first 9 lines
+        
+        for _ in range(9):
+            next(contents)
 
         # Fix: add '(inter' after next to fix list object is not an
         # iterator error
-        next(iter(contents))
+                
         for keyword in searchTerm:
 
             for eachLine in contents:
@@ -30,8 +32,8 @@ def urlHausOpen(filename,searchTerm):
 # to remove the "tt" so programs don't convert the malicious
 # domains to links that an be accidentally clicked on.
                     the_url = eachLine[2].replace("http","hxxp")
-                    the_src = eachLine[4]
+                    the_src = eachLine[6]
                     print("""
-                    URL:
-                    Info: 
-                    {}""",format(the_url, the_src,"*"+60))
+                    URL:{}
+                    Info: {} 
+                    {}""".format(the_url, the_src,"*"*60))
