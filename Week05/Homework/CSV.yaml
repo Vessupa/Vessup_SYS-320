@@ -1,0 +1,4 @@
+service:
+  javascript: ".*exe.*"
+
+  cgi: "[GET|POST].*cmd.exe.*,[GET|POST].*/cgi-bin/htsearch.*"

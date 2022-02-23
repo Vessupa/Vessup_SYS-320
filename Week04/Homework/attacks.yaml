@@ -1,0 +1,7 @@
+---
+shell:
+  winshell: ".*c99.php.*, .*/bin/sh.*, .*cmd.exe.*"
+
+  cgi: "[GET|POST].*cmd.exe.*,[GET|POST].*/cgi-bin/htsearch.*"
+
+  
