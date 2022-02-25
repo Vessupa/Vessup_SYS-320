@@ -1,0 +1,20 @@
+### BEGIN whoami ###
+
+v-laptop\asani-web
+### END whoami ###
+
+### BEGIN echo Hi ###
+
+Hi
+### END echo Hi ###
+
+### BEGIN whoami ###
+
+v-laptop\asani-web
+### END whoami ###
+
+### BEGIN echo Hi ###
+
+Hi
+### END echo Hi ###
+
