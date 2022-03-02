@@ -667,3 +667,53 @@ total 36
 
 ### END touch body_file.tx ###
 
+### BEGIN uname -a ###
+
+Linux freepbx.sangoma.local 3.10.0-1127.19.1.el7.x86_64 #1 SMP Tue Aug 25 17:23:54 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+### END uname -a ###
+
+### BEGIN ps aux ###
+
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+### END ps aux ###
+
+### BEGIN who -a ###
+
+           system boot  2022-03-02 16:55
+### END who -a ###
+
+### BEGIN id ###
+
+uid=0(root) gid=0(root) groups=0(root)
+### END id ###
+
+### BEGIN w ###
+
+ 17:08:06 up 12 min,  1 user,  load average: 0.01, 0.09, 0.09
+### END w ###
+
+### BEGIN hostname -f ###
+
+localhost
+### END hostname -f ###
+
+### BEGIN ip addr show ###
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+### END ip addr show ###
+
+### BEGIN route -n ###
+
+Kernel IP routing table
+### END route -n ###
+
+### BEGIN ip ro show ###
+
+default via 192.168.3.2 dev eth0 
+### END ip ro show ###
+
+### BEGIN ifconfig -a ###
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+### END ifconfig -a ###
+

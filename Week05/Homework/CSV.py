@@ -87,7 +87,7 @@ def attack_events(service, process):
             # Append the split value to the found list
             # "GET /cgi-bin/test-cgi HTTP/1.1" 404 435 "-" "-"
 
-            found.append(sp_results[0]+ " " + sp_results[1] + " " + sp_results[3])
+            found.append(sp_results[2]+ " " + sp_results[3] + " " + sp_results[4])
         
 
             # Remove duplicates by using set
@@ -116,11 +116,11 @@ attack_events(service, process)
     #print(contents)
 
 
-def CSVOpen(filename, searchTerm):
+def CSVOpen(fList, searchTerm):
     print("Hello")
 # Open the urlHaus file
     for eachFile in fList:
-        with open(filename)as f:
+        with open(eachFile)as f:
             contents = csv.reader(f)
        
             next(contents)
@@ -134,8 +134,10 @@ def CSVOpen(filename, searchTerm):
                     # Fix: add '' between 'r and +', and '+ and ,'
                     x = re.findall(r''+keyword+'', eachLine[2])
     
+#for eachFile in fList:
 
-CSVOpen(filenames, process)
+    #print(os.stat(eachFile))
+CSVOpen(fList, process)
                 
                 #for _ in x:
                     

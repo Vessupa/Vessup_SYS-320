@@ -1,4 +1,4 @@
 service:
-  javascript: ".*exe.*"
+  javascript: ".*mshta.*"
 
-  cgi: "[GET|POST].*cmd.exe.*,[GET|POST].*/cgi-bin/htsearch.*"
+  cgi: ".*powershell.exe.*"
