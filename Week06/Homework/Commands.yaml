@@ -1,0 +1,10 @@
+---
+commands:
+  sys_cmds: ['uname -a','ps aux', 'who -a', 'id', 'w']
+  net_cmds: ['hostname -f', 'ip addr show', 'route -n', 'ip ro show', 'ifconfig -a']
+  acc_cmds: ['cat /etc/passwd', 'cat /etc/shadow', 'ypcat passwd', cat/etc/group, 'getent passwd']
+  userinfo_cmds: ['ls -alh /home/*/', 'find /home/*/.vnc /home/*/.subversion -type f', 'grep ^ssh /home/*/.hist', 'grep ^telnet /home/*/.hist', 'cat /home/*/.viminfo']
+  config_cmds: ['cat /etc/hosts', 'cat /etc/sysctl.conf', 'cat /etc/auto_master', 'cat /etc/resolv.conf', 'cat /etc/fstab']
+  distro_cmds: ['uname -a', 'arch', '/etc/os-release', '/etc/redhat-release', '/etc/issue']
+  installed_cmds: ['rpm -qa --last | head', 'yum list | grep installed', 'ls -l /etc/yum.repos.d/', 'ls -l /etc/yum.repos.d/', 'cat /etc/yum.conf']
+  body_file: ['cd /usr/bin', 'touch body_file.tx']
