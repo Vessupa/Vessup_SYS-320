@@ -1,1 +1,16 @@
-Command being run: sudo /home/asani.vessup/kraken --folder /usr/bin --folder  --folder /usr/sbin/   --folder /usr/local/bin  --folder /sbin  --folder /usr/local/sbin  --folder /bin End of sudo /home/asani.vessup/kraken --folder /usr/bin --folder  --folder /usr/sbin/   --folder /usr/local/bin  --folder /sbin  --folder /usr/local/sbin  --folder /bin CommandCommand being run: 3en2XD@dPq End of 3en2XD@dPq Command
+Command being run: sudo -S /home/asani.vessup/kraken --folder /usr/bin --folder  --folder /usr/sbin/   --folder /usr/local/bin  --folder /sbin  --folder /usr/local/sbin  --folder /bin [36mINFO[0m[0000] Looking for configuration file with name config.yaml 
+[36mINFO[0m[0000] No configuration file found, generating a default one... 
+[36mINFO[0m[0000] Loading Yara rules...                        
+[36mINFO[0m[0000] Scanning running processes...                
+[33mWARN[0m[0004] DETECTION! Malicious process detected as foundGoBinary  [33mpid[0m=25680 [33mprocess[0m=snapd
+[33mWARN[0m[0014] DETECTION! Malicious process detected as foundGoBinary  [33mpid[0m=148658 [33mprocess[0m=ls
+[36mINFO[0m[0015] Scanning autoruns...                         
+[33mWARN[0m[0015] DETECTION! Malicious autorun detected as foundGoBinary  [33mimage_path[0m=/usr/bin/snap [33mtype[0m=systemd
+[33mWARN[0m[0016] DETECTION! Malicious autorun detected as foundGoBinary  [33mimage_path[0m=/usr/bin/snap [33mtype[0m=systemd
+[36mINFO[0m[0016] Scanning the filesystem (this can take several minutes)... 
+[31mERRO[0m[0016] Some malicious artifacts have been detected on this system: 
+[31mERRO[0m[0016] Found detection for foundGoBinary            
+[31mERRO[0m[0016] Found detection for foundGoBinary            
+[31mERRO[0m[0016] Found detection for foundGoBinary            
+[31mERRO[0m[0016] Found detection for foundGoBinary            
+End of sudo -S /home/asani.vessup/kraken --folder /usr/bin --folder  --folder /usr/sbin/   --folder /usr/local/bin  --folder /sbin  --folder /usr/local/sbin  --folder /bin Command
