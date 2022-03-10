@@ -1,4 +1,4 @@
-import re, yaml, sys
+import re, yaml, sys, csv
 
 
 # Open the Yaml file
@@ -12,21 +12,14 @@ except EnvironmentError as e:
 
 
 
-def _logs(service, term, file):
+def _logs(filename, listOfKeywords):
 
-    # Query the yaml file for the 'term' or direction and
-    # retrieve the strings to search on.
-    # terms = keywords['apache']['php']
-    terms = keywords[service][term]
+    with open(filename, 'r') as f:
 
-    listOfKeywords = terms.split(",")
-
-    with open(file) as f:
-
-        contents = f.readlines()
+        contents = csv.reader(f)
 
     # Lists to store the results
-    results = []
+    #results = []
 
     # Loop through the list returned. Each element is a line
 
@@ -40,13 +33,30 @@ def _logs(service, term, file):
             # if eachKeyword in line:
             # Searches and returns results using a regular expression search
 
-            x = re.findall(r''+eachKeyword+'', line)
+            x = re.findall(r''+eachKeyword+'', line[1])
 
             for found in x:
 
                 # Append the returned keyworkds to the results list
 
-                    results.append(found)
+                    # results.append(found)
+
+                args = line[1]
+                host = line[2]
+                name = line[3]
+                path = line[4]
+                pid = line[5]
+                user = line[6]
+                print("""
+        
+    Arguments: {}
+    Host: {}
+    Name: {}
+    Path: {}
+    PID: {}
+    User: {}
+    {}
+    """.format(args, host, name, path, pid, user, "*" * 60))
 
     # Check to see if there are results
     if len(results) == 0:

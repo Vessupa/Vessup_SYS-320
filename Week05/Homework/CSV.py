@@ -1,5 +1,5 @@
 # Import CSV module to program
-import csv, re, sys, os, argparse, CSV_Check
+import csv, re, sys, os, argparse, CSV_Check, yaml
 # File to traverse a given directory and it's subdirs and retrieve all the files
 
 
@@ -15,7 +15,7 @@ parser.add_argument("-d", "--directory", required="True", help="Directory that y
 
 parser.add_argument("-p", "--process", required="True", help="Process to search for.")
 
-parser.add_argument("-s", "--service", required="True", help="Service to look up.")
+parser.add_argument("-s", "--services", required="True", help="Service to look up.")
 # Parse the arguments
 args = parser.parse_args()
 
@@ -23,7 +23,7 @@ rootdir = args.directory
 
 process = args.process
 
-service = args.service
+services = args.services
 # Get information from the commandline
 # print(sys.argv)
 
@@ -58,86 +58,111 @@ for root, subfolders, filenames in os.walk(rootdir):
         fList.append(fileList)
         #print(fList)
 
-def attack_events(service, process):
+try:
 
-    print("hello")
+    with open('CSV.yaml', 'r') as yf:
+        keywords = yaml.safe_load(yf)
 
-    for eachFile in fList:
+except EnvironmentError as e:
+    print(e.strerror)
 
-    # Call syslogCheck and return the results
-        #print("hello")
 
-        is_found = CSV_Check._logs(service, process, eachFile)
+def attack_events(service, term):
+    # Query the yaml file for the 'term' or direction and
+    # retrieve the strings to search on.
+    # terms = keywords['apache']['php']
+    terms = keywords[service][term]
+
+    Split_action = terms.split(",")
+
+    for file in fList:
+        CSV_Check._logs(file, Split_action)
+
+    return
+
+# attack_events
+
+
+# def attack_events(service, process):
+
+#     print("hello")
+
+#     for eachFile in fList:
+
+#     # Call syslogCheck and return the results
+#         #print("hello")
+
+#         is_found = CSV_Check._logs(service, process, eachFile)
 
         
 
-        # found list
-        found = []
+#         # found list
+#         found = []
 
-        for eachFound in is_found:
+#         for eachFound in is_found:
 
-            # Split the results
+#             # Split the results
 
-            #print(eachFound)
+#             #print(eachFound)
 
-            sp_results = eachFound.split(" ")
+#             sp_results = eachFound.split(" ")
 
         
 
-            # Append the split value to the found list
-            # "GET /cgi-bin/test-cgi HTTP/1.1" 404 435 "-" "-"
+#             # Append the split value to the found list
+#             # "GET /cgi-bin/test-cgi HTTP/1.1" 404 435 "-" "-"
 
-            found.append(sp_results[2]+ " " + sp_results[3] + " " + sp_results[4])
+#             found.append(sp_results[2]+ " " + sp_results[3] + " " + sp_results[4])
         
 
-            # Remove duplicates by using set
-            # and convert the list to dictionary
+#             # Remove duplicates by using set
+#             # and convert the list to dictionary
 
-            getValues = set(found)
+#             getValues = set(found)
 
-            # Print results
+#             # Print results
 
-            for eachValue in getValues:
+#             for eachValue in getValues:
 
-                print(eachValue)
+#                 print(eachValue)
 
-                #print(fList)
+#                 #print(fList)
 
-                return
+#                 return
 
-attack_events(service, process)
-#for eachFile in fList:
+# attack_events(service, process)
+# #for eachFile in fList:
 
-    #print(os.stat(eachFile))
-# Function to parse the CSV files which takes in two arguments
-# Fix: urlHausOpen has a number 1 instead of 'l'
-#with open('../../Logs/urlHausTestDataSet.csv', 'rt')as f:
-    #contents = csv.reader(f)
-    #print(contents)
+#     #print(os.stat(eachFile))
+# # Function to parse the CSV files which takes in two arguments
+# # Fix: urlHausOpen has a number 1 instead of 'l'
+# #with open('../../Logs/urlHausTestDataSet.csv', 'rt')as f:
+#     #contents = csv.reader(f)
+#     #print(contents)
 
 
-def CSVOpen(fList, searchTerm):
-    print("Hello")
-# Open the urlHaus file
-    for eachFile in fList:
-        with open(eachFile)as f:
-            contents = csv.reader(f)
+# def CSVOpen(fList, searchTerm):
+#     print("Hello")
+# # Open the urlHaus file
+#     for eachFile in fList:
+#         with open(eachFile)as f:
+#             contents = csv.reader(f)
        
-            next(contents)
+#             next(contents)
 
-        # Fix: add '(inter' after next to fix list object is not an
-        # iterator error
+#         # Fix: add '(inter' after next to fix list object is not an
+#         # iterator error
                 
-            for keyword in searchTerm:
+#             for keyword in searchTerm:
 
-                for eachLine in contents:
-                    # Fix: add '' between 'r and +', and '+ and ,'
-                    x = re.findall(r''+keyword+'', eachLine[2])
+#                 for eachLine in contents:
+#                     # Fix: add '' between 'r and +', and '+ and ,'
+#                     x = re.findall(r''+keyword+'', eachLine[2])
     
-#for eachFile in fList:
+# #for eachFile in fList:
 
-    #print(os.stat(eachFile))
-CSVOpen(fList, process)
+#     #print(os.stat(eachFile))
+# CSVOpen(fList, process)
                 
                 #for _ in x:
                     
