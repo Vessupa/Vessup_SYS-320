@@ -1,4 +1,4 @@
-Command being run: sudo -S lsof -p 148658 COMMAND    PID     USER   FD      TYPE DEVICE SIZE/OFF   NODE NAME
+COMMAND    PID     USER   FD      TYPE DEVICE SIZE/OFF   NODE NAME
 ls      148658 p.dalton  cwd       DIR    8,1     4096 258069 /home/p.dalton
 ls      148658 p.dalton  rtd       DIR    8,1     4096      2 /
 ls      148658 p.dalton  txt       REG    8,1  6597697 258133 /usr/local/bin/ls
@@ -14,7 +14,7 @@ ls      148658 p.dalton    5u     IPv6 959366      0t0    TCP *:http-alt (LISTEN
 ls      148658 p.dalton    7u  a_inode   0,14        0  10376 [eventpoll]
 ls      148658 p.dalton    8r     FIFO   0,13      0t0 959367 pipe
 ls      148658 p.dalton    9w     FIFO   0,13      0t0 959367 pipe
-End of sudo -S lsof -p 148658 CommandCommand being run: sudo -S lsof -p 25680 COMMAND   PID USER   FD      TYPE             DEVICE SIZE/OFF   NODE NAME
+COMMAND   PID USER   FD      TYPE             DEVICE SIZE/OFF   NODE NAME
 snapd   25680 root  cwd       DIR                8,1     4096      2 /
 snapd   25680 root  rtd       DIR                8,1     4096      2 /
 snapd   25680 root  txt       REG                8,1 30955760  16810 /usr/lib/snapd/snapd
@@ -34,4 +34,553 @@ snapd   25680 root    7u     unix 0xffff89ca41db5400      0t0 120155 /run/snapd-
 snapd   25680 root    8u  netlink                         0t0 121049 KOBJECT_UEVENT
 snapd   25680 root    9r     FIFO               0,13      0t0 121050 pipe
 snapd   25680 root   10w     FIFO               0,13      0t0 121050 pipe
-End of sudo -S lsof -p 25680 Command
+COMMAND      PID             USER   FD      TYPE             DEVICE SIZE/OFF       NODE NAME
+systemd        1             root  cwd       DIR                8,1     4096          2 /
+systemd        1             root  rtd       DIR                8,1     4096          2 /
+systemd        1             root  txt       REG                8,1  1620224       3303 /usr/lib/systemd/systemd
+systemd        1             root  DEL       REG                8,1                3455 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd        1             root  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd        1             root  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd        1             root  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd        1             root  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd        1             root  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd        1             root  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd        1             root  DEL       REG                8,1                3881 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd        1             root  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd        1             root  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd        1             root  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd        1             root  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd        1             root  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd        1             root  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd        1             root  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd        1             root  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd        1             root  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd        1             root  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd        1             root  DEL       REG                8,1                3935 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd        1             root  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd        1             root  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd        1             root  DEL       REG                8,1                3884 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd        1             root  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd        1             root  mem       REG                8,1    80736       3908 /usr/lib/x86_64-linux-gnu/libapparmor.so.1.6.1
+systemd        1             root  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd        1             root  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd        1             root  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd        1             root  DEL       REG                8,1                3904 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd        1             root  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd        1             root  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd        1             root  DEL       REG                8,1                3471 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd        1             root  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd        1             root  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd        1             root  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd        1             root    0u      CHR                1,3      0t0          6 /dev/null
+systemd        1             root    1u      CHR                1,3      0t0          6 /dev/null
+systemd        1             root    2u      CHR                1,3      0t0          6 /dev/null
+systemd        1             root    3w      CHR               1,11      0t0         12 /dev/kmsg
+systemd        1             root    4u  a_inode               0,14        0      10376 [eventpoll]
+systemd        1             root    5u  a_inode               0,14        0      10376 [signalfd]
+systemd        1             root    6r  a_inode               0,14        0      10376 inotify
+systemd        1             root    7r      DIR               0,29        0          1 /sys/fs/cgroup/unified
+systemd        1             root    8u  a_inode               0,14        0      10376 [timerfd]
+systemd        1             root    9u  a_inode               0,14        0      10376 [eventpoll]
+systemd        1             root   10r      REG                0,5        0      13437 /proc/1/mountinfo
+systemd        1             root   11r  a_inode               0,14        0      10376 inotify
+systemd        1             root   12r  a_inode               0,14        0      10376 inotify
+systemd        1             root   13r  a_inode               0,14        0      10376 inotify
+systemd        1             root   14r      REG                0,5        0 4026532071 /proc/swaps
+systemd        1             root   15u  netlink                         0t0      13438 KOBJECT_UEVENT
+systemd        1             root   16r  a_inode               0,14        0      10376 inotify
+systemd        1             root   17r  a_inode               0,14        0      10376 inotify
+systemd        1             root   18u  a_inode               0,14        0      10376 bpf-prog
+systemd        1             root   19u     unix 0xffff89cae7e3a800      0t0      13442 /run/systemd/private type=STREAM
+systemd        1             root   20u     unix 0xffff89cae7e3a000      0t0      13444 /run/systemd/userdb/io.systemd.DynamicUser type=STREAM
+systemd        1             root   21u  a_inode               0,14        0      10376 bpf-prog
+systemd        1             root   22u  a_inode               0,14        0      10376 bpf-prog
+systemd        1             root   23u  a_inode               0,14        0      10376 bpf-prog
+systemd        1             root   24u  a_inode               0,14        0      10376 bpf-prog
+systemd        1             root   25u  a_inode               0,14        0      10376 bpf-prog
+systemd        1             root   26r      CHR             10,235      0t0        359 /dev/autofs
+systemd        1             root   28u  a_inode               0,14        0      10376 [timerfd]
+systemd        1             root   32u     unix 0xffff89cae7e3b400      0t0      13439 /run/systemd/notify type=DGRAM
+systemd        1             root   35u     unix 0xffff89cae7e3b000      0t0      13440 type=DGRAM
+systemd        1             root   36u     unix 0xffff89cae7e3bc00      0t0      13441 type=DGRAM
+systemd        1             root   37u     unix 0xffff89cae8728000      0t0     113382 type=DGRAM
+systemd        1             root   38u     unix 0xffff89cae8729c00      0t0     113383 type=DGRAM
+systemd        1             root   39r     FIFO               0,13      0t0      13452 pipe
+systemd        1             root   40u     unix 0xffff89cae7e39c00      0t0      13474 /run/udev/control type=SEQPACKET
+systemd        1             root   41u     unix 0xffff89cae7e38400      0t0      13469 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   42u     unix 0xffff89cae7e39800      0t0      13471 /run/systemd/journal/socket type=DGRAM
+systemd        1             root   43u  netlink                         0t0      13473 ROUTE
+systemd        1             root   44u     unix 0xffff89cae7e3ac00      0t0      13454 /run/lvm/lvmpolld.socket type=STREAM
+systemd        1             root   45u     unix 0xffff89caeb600400      0t0      14210 type=DGRAM
+systemd        1             root   46u  netlink                         0t0      14211 AUDIT
+systemd        1             root   47u      CHR             10,242      0t0          4 /dev/rfkill
+systemd        1             root   48u     unix 0xffff89cae72ef000      0t0      20107 /run/dbus/system_bus_socket type=STREAM
+systemd        1             root   49u     FIFO               0,25      0t0        275 /run/initctl
+systemd        1             root   50u     unix 0xffff89cae8729800      0t0      84543 /var/snap/lxd/common/lxd/unix.socket type=STREAM
+systemd        1             root   51u     FIFO               0,25      0t0        268 /run/dmeventd-server
+systemd        1             root   52u     FIFO               0,25      0t0        269 /run/dmeventd-client
+systemd        1             root   53u  netlink                         0t0      13476 KOBJECT_UEVENT
+systemd        1             root   55u     unix 0xffff89caea84c400      0t0      20145 /run/uuidd/request type=STREAM
+systemd        1             root   56u  a_inode               0,14        0      10376 [timerfd]
+systemd        1             root   57u  netlink                         0t0      13466 AUDIT
+systemd        1             root   58u     unix 0xffff89ca41db5000      0t0     120154 /run/snapd.socket type=STREAM
+systemd        1             root   65u     unix 0xffff89cae7e38800      0t0      20529 type=STREAM
+systemd        1             root   66u     unix 0xffff89ca41db5400      0t0     120155 /run/snapd-snap.socket type=STREAM
+systemd        1             root   68u     unix 0xffff89cae8c08800      0t0     113585 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   69u     unix 0xffff89caea84d400      0t0      22508 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   85u     unix 0xffff89cae9730c00      0t0      21406 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   86u     unix 0xffff89cae9731000      0t0      21253 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   87u     unix 0xffff89cae9ddfc00      0t0      20928 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   88u     unix 0xffff89cae9d91800      0t0      20600 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   89u     unix 0xffff89caea84cc00      0t0      20296 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   91u     unix 0xffff89caeb600000      0t0      19249 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   92u     unix 0xffff89cae72ee000      0t0      17864 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   93u     unix 0xffff89caeb682800      0t0      16915 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   94u     unix 0xffff89caeb601000      0t0      15032 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   95u     unix 0xffff89ca3c94c400      0t0     120341 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   97u     unix 0xffff89caeaa5e800      0t0     169671 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   99u     unix 0xffff89cae72ee800      0t0     175552 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  101u     unix 0xffff89cac85bc800      0t0     181011 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  104u     unix 0xffff89cac84ab400      0t0     181248 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  105u     unix 0xffff89caeb600800      0t0     944709 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  122u     unix 0xffff89cae7e3a400      0t0      13456 @/org/kernel/linux/storage/multipathd type=STREAM
+systemd        1             root  123u     unix 0xffff89cae7e3b800      0t0      13457 /run/systemd/journal/syslog type=DGRAM
+systemd        1             root  124u     unix 0xffff89cae7e38000      0t0      13459 /run/systemd/fsck.progress type=STREAM
+systemd        1             root  125u     FIFO               0,25      0t0        512 /run/cloud-init/hook-hotplug-cmd
+systemd        1             root  126u     unix 0xffff89cae72ef400      0t0      20132 @ISCSIADM_ABSTRACT_NAMESPACE type=STREAM
+systemd        1             root  127u     unix 0xffff89cae7e38c00      0t0      13467 /run/systemd/journal/dev-log type=DGRAM
+systemd-j    345             root  cwd       DIR                8,1     4096          2 /
+systemd-j    345             root  rtd       DIR                8,1     4096          2 /
+systemd-j    345             root  txt       REG                8,1   162032       3318 /usr/lib/systemd/systemd-journald
+systemd-j    345             root  mem       REG                8,1 25165824      71829 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/system.journal
+systemd-j    345             root  mem       REG                8,1  8388608      29724 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604341.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3677 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604036.journal
+systemd-j    345             root  mem       REG                8,1  8388608      29651 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604136.journal
+systemd-j    345             root  mem       REG                8,1  8388608      18430 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604209.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3753 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604986.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3712 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604279.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3684 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286605029.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3687 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604063.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3615 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604095.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3587 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604228.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3538 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604099.journal
+systemd-j    345             root  mem       REG                8,1  8388608       3465 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604257.journal
+systemd-j    345             root  mem       REG                8,1  8388608        576 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604280.journal
+systemd-j    345             root  mem       REG                8,1  8388608        135 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286603957.journal
+systemd-j    345             root  mem       REG                8,1  8388608      70837 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1001.journal
+systemd-j    345             root  mem       REG                8,1  8388608       2365 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604046.journal
+systemd-j    345             root  mem       REG                8,1  8388608      71926 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1000.journal
+systemd-j    345             root  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd-j    345             root  DEL       REG                8,1                3455 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd-j    345             root  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd-j    345             root  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd-j    345             root  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd-j    345             root  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd-j    345             root  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd-j    345             root  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd-j    345             root  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd-j    345             root  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd-j    345             root  DEL       REG                8,1                3881 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd-j    345             root  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd-j    345             root  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd-j    345             root  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd-j    345             root  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd-j    345             root  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd-j    345             root  DEL       REG                8,1                3471 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd-j    345             root  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd-j    345             root  DEL       REG                8,1                3904 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd-j    345             root  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd-j    345             root  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd-j    345             root  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd-j    345             root  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd-j    345             root  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd-j    345             root  DEL       REG                8,1                3935 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd-j    345             root  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd-j    345             root  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd-j    345             root  DEL       REG                8,1                3884 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd-j    345             root  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd-j    345             root  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd-j    345             root  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd-j    345             root  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd-j    345             root  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd-j    345             root  mem       REG               0,25        8        294 /run/systemd/journal/kernel-seqnum
+systemd-j    345             root    0r      CHR                1,3      0t0          6 /dev/null
+systemd-j    345             root    1w      CHR                1,3      0t0          6 /dev/null
+systemd-j    345             root    2w      CHR                1,3      0t0          6 /dev/null
+systemd-j    345             root    3u     unix 0xffff89cae7e38c00      0t0      13467 /run/systemd/journal/dev-log type=DGRAM
+systemd-j    345             root    4u     unix 0xffff89cae7e38400      0t0      13469 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root    5u     unix 0xffff89cae7e39800      0t0      13471 /run/systemd/journal/socket type=DGRAM
+systemd-j    345             root    6u  netlink                         0t0      13466 AUDIT
+systemd-j    345             root    7w      CHR               1,11      0t0         12 /dev/kmsg
+systemd-j    345             root    8u  a_inode               0,14        0      10376 [eventpoll]
+systemd-j    345             root    9u      CHR               1,11      0t0         12 /dev/kmsg
+systemd-j    345             root   10u     unix 0xffff89caea84d000      0t0      13956 /run/systemd/journal/io.systemd.journal type=STREAM
+systemd-j    345             root   11r      REG                0,5        0      13957 /proc/sys/kernel/hostname
+systemd-j    345             root   12u  a_inode               0,14        0      10376 [signalfd]
+systemd-j    345             root   13u  a_inode               0,14        0      10376 [signalfd]
+systemd-j    345             root   14u  a_inode               0,14        0      10376 [signalfd]
+systemd-j    345             root   15u     unix 0xffff89cae95d9400      0t0      13958 type=DGRAM
+systemd-j    345             root   16u     unix 0xffff89caeb601000      0t0      15032 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   17u  a_inode               0,14        0      10376 [timerfd]
+systemd-j    345             root   18u     unix 0xffff89caeb682800      0t0      16915 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   19u      REG                8,1  8388608       3677 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604036.journal
+systemd-j    345             root   20u     unix 0xffff89caeaa5e800      0t0     169671 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   21u     unix 0xffff89caea84cc00      0t0      20296 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   22u     unix 0xffff89caeb600000      0t0      19249 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   23u      REG                8,1 25165824      71829 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/system.journal
+systemd-j    345             root   24u     unix 0xffff89cae72ee000      0t0      17864 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   25u     unix 0xffff89caea84d400      0t0      22508 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   26u     unix 0xffff89cac85bc800      0t0     181011 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   27u     unix 0xffff89cae9d91800      0t0      20600 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   28u     unix 0xffff89ca3c94c400      0t0     120341 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   29u     unix 0xffff89cae9731000      0t0      21253 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   30u     unix 0xffff89cae9ddfc00      0t0      20928 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   31u     unix 0xffff89cae9730c00      0t0      21406 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   32u     unix 0xffff89cac84ab400      0t0     181248 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   33u      REG                8,1  8388608      29724 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604341.journal
+systemd-j    345             root   34u      REG                8,1  8388608      70837 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1001.journal
+systemd-j    345             root   35u      REG                8,1  8388608      71926 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1000.journal
+systemd-j    345             root   36u     unix 0xffff89cae72ee800      0t0     175552 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   37u      REG                8,1  8388608        135 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286603957.journal
+systemd-j    345             root   38u      REG                8,1  8388608        576 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604280.journal
+systemd-j    345             root   39u      REG                8,1  8388608       3465 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604257.journal
+systemd-j    345             root   40u     unix 0xffff89cae8c08800      0t0     113585 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   41u      REG                8,1  8388608       3538 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604099.journal
+systemd-j    345             root   42u      REG                8,1  8388608       3587 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604228.journal
+systemd-j    345             root   43u      REG                8,1  8388608       2365 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604046.journal
+systemd-j    345             root   44u      REG                8,1  8388608       3615 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604095.journal
+systemd-j    345             root   45u      REG                8,1  8388608       3687 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604063.journal
+systemd-j    345             root   46u      REG                8,1  8388608       3684 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286605029.journal
+systemd-j    345             root   47u      REG                8,1  8388608       3712 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604279.journal
+systemd-j    345             root   48u      REG                8,1  8388608       3753 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604986.journal
+systemd-j    345             root   49u      REG                8,1  8388608      18430 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604209.journal
+systemd-j    345             root   50u      REG                8,1  8388608      29651 /var/log/journal/3642ea3356304ba6b4e9687e03469bb3/user-1286604136.journal
+systemd-j    345             root   51u     unix 0xffff89caeb600800      0t0     944709 /run/systemd/journal/stdout type=STREAM
+systemd-u    377             root  cwd       DIR                8,1     4096          2 /
+systemd-u    377             root  rtd       DIR                8,1     4096          2 /
+systemd-u    377             root  txt       REG                8,1   744008       3295 /usr/lib/systemd/systemd-udevd
+systemd-u    377             root  DEL       REG                8,1                3461 /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+systemd-u    377             root  mem       REG                8,1    10257      16002 /usr/lib/modules/5.4.0-99-generic/modules.builtin.bin
+systemd-u    377             root  mem       REG                8,1   333660      16001 /usr/lib/modules/5.4.0-99-generic/modules.symbols.bin
+systemd-u    377             root  mem       REG                8,1   156164      15998 /usr/lib/modules/5.4.0-99-generic/modules.alias.bin
+systemd-u    377             root  mem       REG                8,1   122992      15996 /usr/lib/modules/5.4.0-99-generic/modules.dep.bin
+systemd-u    377             root  mem       REG                8,1  9954603       5948 /usr/lib/udev/hwdb.bin
+systemd-u    377             root  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd-u    377             root  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd-u    377             root  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd-u    377             root  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd-u    377             root  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd-u    377             root  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd-u    377             root  DEL       REG                8,1                3884 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd-u    377             root  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd-u    377             root  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd-u    377             root  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd-u    377             root  mem       REG                8,1    25036      16003 /usr/lib/modules/5.4.0-99-generic/modules.builtin.alias.bin
+systemd-u    377             root  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd-u    377             root    0r      CHR                1,3      0t0          6 /dev/null
+systemd-u    377             root    1u     unix 0xffff89caeb601400      0t0      15025 type=STREAM
+systemd-u    377             root    2u     unix 0xffff89caeb601400      0t0      15025 type=STREAM
+systemd-u    377             root    3u     unix 0xffff89cae7e39c00      0t0      13474 /run/udev/control type=SEQPACKET
+systemd-u    377             root    4u  netlink                         0t0      13476 KOBJECT_UEVENT
+systemd-u    377             root    5u     unix 0xffff89caec381c00      0t0      15035 type=DGRAM
+systemd-u    377             root    6u     unix 0xffff89caec381400      0t0      15037 type=DGRAM
+systemd-u    377             root    7u     unix 0xffff89caec380400      0t0      15038 type=DGRAM
+systemd-u    377             root    8r  a_inode               0,14        0      10376 inotify
+systemd-u    377             root    9u  a_inode               0,14        0      10376 [eventpoll]
+systemd-u    377             root   10u  a_inode               0,14        0      10376 [signalfd]
+systemd-u    377             root   11u  a_inode               0,14        0      10376 [timerfd]
+systemd-u    377             root   12r      REG                8,1  9954603       5948 /usr/lib/udev/hwdb.bin
+systemd-u    377             root   13u  a_inode               0,14        0      10376 [timerfd]
+systemd-t    515 systemd-timesync  cwd       DIR                8,1     4096          2 /
+systemd-t    515 systemd-timesync  rtd       DIR                8,1     4096          2 /
+systemd-t    515 systemd-timesync  txt       REG                8,1    55520       3294 /usr/lib/systemd/systemd-timesyncd
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3467 /usr/lib/x86_64-linux-gnu/libresolv-2.31.so
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3460 /usr/lib/x86_64-linux-gnu/libnss_dns-2.31.so
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3461 /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+systemd-t    515 systemd-timesync  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd-t    515 systemd-timesync  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd-t    515 systemd-timesync  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd-t    515 systemd-timesync  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd-t    515 systemd-timesync  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd-t    515 systemd-timesync  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd-t    515 systemd-timesync  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd-t    515 systemd-timesync  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd-t    515 systemd-timesync  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd-t    515 systemd-timesync  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3881 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd-t    515 systemd-timesync  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd-t    515 systemd-timesync  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd-t    515 systemd-timesync  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3471 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd-t    515 systemd-timesync  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3904 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd-t    515 systemd-timesync  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd-t    515 systemd-timesync  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd-t    515 systemd-timesync  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd-t    515 systemd-timesync  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd-t    515 systemd-timesync  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3935 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd-t    515 systemd-timesync  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd-t    515 systemd-timesync  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3884 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd-t    515 systemd-timesync  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3455 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd-t    515 systemd-timesync  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd-t    515 systemd-timesync  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd-t    515 systemd-timesync    0r      CHR                1,3      0t0          6 /dev/null
+systemd-t    515 systemd-timesync    1u     unix 0xffff89cae72eec00      0t0      17862 type=STREAM
+systemd-t    515 systemd-timesync    2u     unix 0xffff89cae72eec00      0t0      17862 type=STREAM
+systemd-t    515 systemd-timesync    3u     unix 0xffff89caebe07c00      0t0      17898 type=DGRAM
+systemd-t    515 systemd-timesync    4u  a_inode               0,14        0      10376 [eventpoll]
+systemd-t    515 systemd-timesync    5u  a_inode               0,14        0      10376 [signalfd]
+systemd-t    515 systemd-timesync    6u  a_inode               0,14        0      10376 [timerfd]
+systemd-t    515 systemd-timesync    7u     unix 0xffff89caebe06400      0t0      17901 type=DGRAM
+systemd-t    515 systemd-timesync    8u     unix 0xffff89caebe06000      0t0      17902 type=DGRAM
+systemd-t    515 systemd-timesync    9u     unix 0xffff89caebe07000      0t0      17903 type=DGRAM
+systemd-t    515 systemd-timesync   10u     unix 0xffff89caebe07800      0t0      17904 type=DGRAM
+systemd-t    515 systemd-timesync   11r  a_inode               0,14        0      10376 inotify
+systemd-t    515 systemd-timesync   12u  a_inode               0,14        0      10376 [timerfd]
+systemd-t    515 systemd-timesync   13u  a_inode               0,14        0      10376 [timerfd]
+systemd-t    515 systemd-timesync   14u  a_inode               0,14        0      10376 [timerfd]
+systemd-t    515 systemd-timesync   15u     unix 0xffff89caebe06800      0t0      20131 type=STREAM
+systemd-r    595  systemd-resolve  cwd       DIR                8,1     4096          2 /
+systemd-r    595  systemd-resolve  rtd       DIR                8,1     4096          2 /
+systemd-r    595  systemd-resolve  txt       REG                8,1   415968       3331 /usr/lib/systemd/systemd-resolved
+systemd-r    595  systemd-resolve  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd-r    595  systemd-resolve  mem       REG                8,1    43416       3500 /usr/lib/x86_64-linux-gnu/libffi.so.7.1.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd-r    595  systemd-resolve  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd-r    595  systemd-resolve  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd-r    595  systemd-resolve  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd-r    595  systemd-resolve  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd-r    595  systemd-resolve  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3881 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   534880       3502 /usr/lib/x86_64-linux-gnu/libgmp.so.10.4.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   219976       3492 /usr/lib/x86_64-linux-gnu/libhogweed.so.5.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   231592       3937 /usr/lib/x86_64-linux-gnu/libnettle.so.7.0
+systemd-r    595  systemd-resolve  mem       REG                8,1    84120       3853 /usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.0
+systemd-r    595  systemd-resolve  mem       REG                8,1  1265624       3521 /usr/lib/x86_64-linux-gnu/libp11-kit.so.0.3.0
+systemd-r    595  systemd-resolve  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd-r    595  systemd-resolve  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd-r    595  systemd-resolve  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd-r    595  systemd-resolve  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3471 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd-r    595  systemd-resolve  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3904 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd-r    595  systemd-resolve  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd-r    595  systemd-resolve  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3935 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd-r    595  systemd-resolve  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3884 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd-r    595  systemd-resolve  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd-r    595  systemd-resolve  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd-r    595  systemd-resolve  mem       REG                8,1  1914336       3801 /usr/lib/x86_64-linux-gnu/libgnutls.so.30.27.0
+systemd-r    595  systemd-resolve  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3455 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd-r    595  systemd-resolve  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd-r    595  systemd-resolve  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd-r    595  systemd-resolve  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd-r    595  systemd-resolve    0r      CHR                1,3      0t0          6 /dev/null
+systemd-r    595  systemd-resolve    1u     unix 0xffff89cae72efc00      0t0      19248 type=STREAM
+systemd-r    595  systemd-resolve    2u     unix 0xffff89cae72efc00      0t0      19248 type=STREAM
+systemd-r    595  systemd-resolve    3u     unix 0xffff89cae9ff4800      0t0      19260 type=DGRAM
+systemd-r    595  systemd-resolve    4u  a_inode               0,14        0      10376 [eventpoll]
+systemd-r    595  systemd-resolve    5u  a_inode               0,14        0      10376 [signalfd]
+systemd-r    595  systemd-resolve    6u  a_inode               0,14        0      10376 [timerfd]
+systemd-r    595  systemd-resolve    7r      REG                0,5        0      13957 /proc/sys/kernel/hostname
+systemd-r    595  systemd-resolve    8r  a_inode               0,14        0      10376 inotify
+systemd-r    595  systemd-resolve    9u  netlink                         0t0      19271 ROUTE
+systemd-r    595  systemd-resolve   10u  a_inode               0,14        0      10376 [timerfd]
+systemd-r    595  systemd-resolve   11u  a_inode               0,14        0      10376 [timerfd]
+systemd-r    595  systemd-resolve   12u     IPv4              19274      0t0        UDP localhost:domain 
+systemd-r    595  systemd-resolve   13u     IPv4              19275      0t0        TCP localhost:domain (LISTEN)
+systemd-r    595  systemd-resolve   14u     unix 0xffff89cae9ff4000      0t0      20129 type=STREAM
+systemd-l    725             root  cwd       DIR                8,1     4096          2 /
+systemd-l    725             root  rtd       DIR                8,1     4096          2 /
+systemd-l    725             root  txt       REG                8,1   268576       3320 /usr/lib/systemd/systemd-logind
+systemd-l    725             root  mem       REG                8,1   239896       3892 /usr/lib/x86_64-linux-gnu/libnss_systemd.so.2
+systemd-l    725             root  DEL       REG                8,1                3461 /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+systemd-l    725             root  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd-l    725             root  DEL       REG                8,1                3455 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd-l    725             root  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd-l    725             root  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd-l    725             root  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd-l    725             root  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd-l    725             root  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd-l    725             root  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd-l    725             root  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd-l    725             root  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd-l    725             root  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd-l    725             root  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd-l    725             root  DEL       REG                8,1                3881 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd-l    725             root  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd-l    725             root  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd-l    725             root  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd-l    725             root  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd-l    725             root  DEL       REG                8,1                3471 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd-l    725             root  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd-l    725             root  DEL       REG                8,1                3904 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd-l    725             root  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd-l    725             root  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd-l    725             root  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd-l    725             root  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd-l    725             root  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd-l    725             root  DEL       REG                8,1                3935 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd-l    725             root  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd-l    725             root  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd-l    725             root  DEL       REG                8,1                3884 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd-l    725             root  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd-l    725             root  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd-l    725             root  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd-l    725             root  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd-l    725             root    0r      CHR                1,3      0t0          6 /dev/null
+systemd-l    725             root    1u     unix 0xffff89cae9731c00      0t0      21248 type=STREAM
+systemd-l    725             root    2u     unix 0xffff89cae9731c00      0t0      21248 type=STREAM
+systemd-l    725             root    3u     unix 0xffff89caea61d400      0t0      21743 type=DGRAM
+systemd-l    725             root    4u  a_inode               0,14        0      10376 [eventpoll]
+systemd-l    725             root    5u  a_inode               0,14        0      10376 [signalfd]
+systemd-l    725             root    6u  a_inode               0,14        0      10376 [timerfd]
+systemd-l    725             root    7r      REG               0,23     4096       7846 /sys/devices/virtual/tty/tty0/active
+systemd-l    725             root    8u  netlink                         0t0      21838 KOBJECT_UEVENT
+systemd-l    725             root    9r  a_inode               0,14        0      10376 inotify
+systemd-l    725             root   10r     FIFO               0,25      0t0        548 /run/systemd/inhibit/1.ref
+systemd-l    725             root   11u  netlink                         0t0      21839 KOBJECT_UEVENT
+systemd-l    725             root   12u  netlink                         0t0      21840 KOBJECT_UEVENT
+systemd-l    725             root   13u  netlink                         0t0      21841 KOBJECT_UEVENT
+systemd-l    725             root   14u     unix 0xffff89caea61d800      0t0      21842 type=STREAM
+systemd-l    725             root   15u  a_inode               0,14        0      10376 [timerfd]
+systemd-l    725             root   16u      CHR              13,64      0t0        144 /dev/input/event0
+systemd-l    725             root   17u      CHR              13,65      0t0        145 /dev/input/event1
+systemd-l    725             root   18u      CHR                4,6      0t0         27 /dev/tty6
+systemd-l    725             root   19r     FIFO               0,25      0t0        844 /run/systemd/sessions/919.ref
+systemd-n  36633  systemd-network  cwd       DIR                8,1     4096          2 /
+systemd-n  36633  systemd-network  rtd       DIR                8,1     4096          2 /
+systemd-n  36633  systemd-network  txt       REG                8,1  2241536       3324 /usr/lib/systemd/systemd-networkd
+systemd-n  36633  systemd-network  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd-n  36633  systemd-network  DEL       REG                8,1                3455 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd-n  36633  systemd-network  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd-n  36633  systemd-network  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd-n  36633  systemd-network  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd-n  36633  systemd-network  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd-n  36633  systemd-network  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd-n  36633  systemd-network  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd-n  36633  systemd-network  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd-n  36633  systemd-network  mem       REG                8,1    30936       2777 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd-n  36633  systemd-network  DEL       REG                8,1                3454 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd-n  36633  systemd-network  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd-n  36633  systemd-network  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd-n  36633  systemd-network  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd-n  36633  systemd-network  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd-n  36633  systemd-network  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd-n  36633  systemd-network  mem       REG                8,1   387768      19365 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd-n  36633  systemd-network  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd-n  36633  systemd-network  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd-n  36633  systemd-network  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd-n  36633  systemd-network  mem       REG                8,1   417328       2551 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd-n  36633  systemd-network  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd-n  36633  systemd-network  mem       REG                8,1   351352       1834 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd-n  36633  systemd-network  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd-n  36633  systemd-network  DEL       REG                8,1                3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd-n  36633  systemd-network  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd-n  36633  systemd-network  DEL       REG                8,1                3471 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd-n  36633  systemd-network  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd-n  36633  systemd-network  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd-n  36633  systemd-network  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd-n  36633  systemd-network  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd-n  36633  systemd-network  DEL       REG                8,1                3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd-n  36633  systemd-network  DEL       REG                8,1                3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd-n  36633  systemd-network    0r      CHR                1,3      0t0          6 /dev/null
+systemd-n  36633  systemd-network    1u     unix 0xffff89cae72ef800      0t0     169669 type=STREAM
+systemd-n  36633  systemd-network    2u     unix 0xffff89cae72ef800      0t0     169669 type=STREAM
+systemd-n  36633  systemd-network    3u  netlink                         0t0      13473 ROUTE
+systemd-n  36633  systemd-network    4u     unix 0xffff89caeaa5e400      0t0     169729 type=DGRAM
+systemd-n  36633  systemd-network    5u  a_inode               0,14        0      10376 [eventpoll]
+systemd-n  36633  systemd-network    6u  a_inode               0,14        0      10376 [timerfd]
+systemd-n  36633  systemd-network    7u  a_inode               0,14        0      10376 [signalfd]
+systemd-n  36633  systemd-network    8u  a_inode               0,14        0      10376 [timerfd]
+systemd-n  36633  systemd-network    9u  netlink                         0t0     169732 GENERIC
+systemd-n  36633  systemd-network   10u  netlink                         0t0     169733 KOBJECT_UEVENT
+systemd-n  36633  systemd-network   11u     unix 0xffff89caeaa5ec00      0t0     169734 type=DGRAM
+systemd-n  36633  systemd-network   12u     unix 0xffff89caeaa5f400      0t0     169735 type=DGRAM
+systemd-n  36633  systemd-network   13u     unix 0xffff89caeaa5fc00      0t0     169736 type=DGRAM
+systemd-n  36633  systemd-network   14u     unix 0xffff89caeaa5f800      0t0     169737 type=DGRAM
+systemd-n  36633  systemd-network   15u     unix 0xffff89caeaa5e000      0t0     169738 type=STREAM
+systemd-n  36633  systemd-network   16u     pack             169756      0t0      35020 type=SOCK_RAW
+systemd-n  36633  systemd-network   18u  a_inode               0,14        0      10376 [timerfd]
+systemd-n  36633  systemd-network   19u     raw6                         0t0     169758 00000000000000000000000000000000:003A->00000000000000000000000000000000:0000 st=07
+systemd-n  36633  systemd-network   20u     IPv4             169784      0t0        UDP sys320:bootpc 
+systemd   145807           ubuntu  cwd       DIR                8,1     4096          2 /
+systemd   145807           ubuntu  rtd       DIR                8,1     4096          2 /
+systemd   145807           ubuntu  txt       REG                8,1  1620224       3303 /usr/lib/systemd/systemd
+systemd   145807           ubuntu  mem       REG                8,1  1369352      16181 /usr/lib/x86_64-linux-gnu/libm-2.31.so
+systemd   145807           ubuntu  mem       REG                8,1   178528       3890 /usr/lib/x86_64-linux-gnu/libudev.so.1.6.17
+systemd   145807           ubuntu  mem       REG                8,1  1575112       3861 /usr/lib/x86_64-linux-gnu/libunistring.so.2.1.0
+systemd   145807           ubuntu  mem       REG                8,1   137584       3487 /usr/lib/x86_64-linux-gnu/libgpg-error.so.0.28.0
+systemd   145807           ubuntu  mem       REG                8,1    67912       3910 /usr/lib/x86_64-linux-gnu/libjson-c.so.4.0.0
+systemd   145807           ubuntu  mem       REG                8,1    34872       3486 /usr/lib/x86_64-linux-gnu/libargon2.so.1
+systemd   145807           ubuntu  mem       REG                8,1   431472       3496 /usr/lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+systemd   145807           ubuntu  mem       REG                8,1    30936       2777 /usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0
+systemd   145807           ubuntu  mem       REG                8,1  2954080       3912 /usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+systemd   145807           ubuntu  mem       REG                8,1    27064       3468 /usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0
+systemd   145807           ubuntu  mem       REG                8,1    18816       2576 /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+systemd   145807           ubuntu  mem       REG                8,1   584392       3855 /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.9.0
+systemd   145807           ubuntu  mem       REG                8,1   157224      20034 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+systemd   145807           ubuntu  mem       REG                8,1   162264       3782 /usr/lib/x86_64-linux-gnu/liblzma.so.5.2.4
+systemd   145807           ubuntu  mem       REG                8,1   129248       3518 /usr/lib/x86_64-linux-gnu/liblz4.so.1.9.2
+systemd   145807           ubuntu  mem       REG                8,1    35440       3515 /usr/lib/x86_64-linux-gnu/libip4tc.so.2.0.0
+systemd   145807           ubuntu  mem       REG                8,1   129096       3510 /usr/lib/x86_64-linux-gnu/libidn2.so.0.3.6
+systemd   145807           ubuntu  mem       REG                8,1  1168056       3783 /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.2.5
+systemd   145807           ubuntu  mem       REG                8,1   417328       2551 /usr/lib/x86_64-linux-gnu/libcryptsetup.so.12.5.0
+systemd   145807           ubuntu  mem       REG                8,1   202760       3477 /usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0
+systemd   145807           ubuntu  mem       REG                8,1    31120       3489 /usr/lib/x86_64-linux-gnu/libcap.so.2.32
+systemd   145807           ubuntu  mem       REG                8,1   351352       1834 /usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0
+systemd   145807           ubuntu  mem       REG                8,1    39088       3504 /usr/lib/x86_64-linux-gnu/libacl.so.1.1.2253
+systemd   145807           ubuntu  mem       REG                8,1    80736       3908 /usr/lib/x86_64-linux-gnu/libapparmor.so.1.6.1
+systemd   145807           ubuntu  mem       REG                8,1   104656       3519 /usr/lib/x86_64-linux-gnu/libkmod.so.2.3.5
+systemd   145807           ubuntu  mem       REG                8,1   133200       3508 /usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0
+systemd   145807           ubuntu  mem       REG                8,1    68320       3893 /usr/lib/x86_64-linux-gnu/libpam.so.0.84.2
+systemd   145807           ubuntu  mem       REG                8,1   387768      19365 /usr/lib/x86_64-linux-gnu/libmount.so.1.1.0
+systemd   145807           ubuntu  mem       REG                8,1   163200       3863 /usr/lib/x86_64-linux-gnu/libselinux.so.1
+systemd   145807           ubuntu  mem       REG                8,1   133568       3803 /usr/lib/x86_64-linux-gnu/libseccomp.so.2.5.1
+systemd   145807           ubuntu  mem       REG                8,1    35928      21166 /usr/lib/x86_64-linux-gnu/librt-2.31.so
+systemd   145807           ubuntu  mem       REG                8,1  2454472       3300 /usr/lib/systemd/libsystemd-shared-245.so
+systemd   145807           ubuntu  mem       REG                8,1  2029560       2575 /usr/lib/x86_64-linux-gnu/libc-2.31.so
+systemd   145807           ubuntu  mem       REG                8,1   191472       2570 /usr/lib/x86_64-linux-gnu/ld-2.31.so
+systemd   145807           ubuntu    0r      CHR                1,3      0t0          6 /dev/null
+systemd   145807           ubuntu    1u     unix 0xffff89caeb601800      0t0     944706 type=STREAM
+systemd   145807           ubuntu    2u     unix 0xffff89caeb601800      0t0     944706 type=STREAM
+systemd   145807           ubuntu    3u     unix 0xffff89caeb634400      0t0     944772 type=DGRAM
+systemd   145807           ubuntu    4u  a_inode               0,14        0      10376 [eventpoll]
+systemd   145807           ubuntu    5u  a_inode               0,14        0      10376 [signalfd]
+systemd   145807           ubuntu    6r  a_inode               0,14        0      10376 inotify
+systemd   145807           ubuntu    7r      DIR               0,29        0       7816 /sys/fs/cgroup/unified/user.slice/user-1000.slice/user@1000.service
+systemd   145807           ubuntu    8u  a_inode               0,14        0      10376 [timerfd]
+systemd   145807           ubuntu    9u  a_inode               0,14        0      10376 [eventpoll]
+systemd   145807           ubuntu   10r      REG                0,5        0     944777 /proc/145807/mountinfo
+systemd   145807           ubuntu   11r  a_inode               0,14        0      10376 inotify
+systemd   145807           ubuntu   12u     unix 0xffff89c950334400      0t0     944789 /run/user/1000/bus type=STREAM
+systemd   145807           ubuntu   13r  a_inode               0,14        0      10376 inotify
+systemd   145807           ubuntu   14r      REG                0,5        0 4026532071 /proc/swaps
+systemd   145807           ubuntu   15u  netlink                         0t0     944778 KOBJECT_UEVENT
+systemd   145807           ubuntu   16u     unix 0xffff89caeb635400      0t0     944780 /run/user/1000/systemd/notify type=DGRAM
+systemd   145807           ubuntu   17u     unix 0xffff89caeb634c00      0t0     944781 type=DGRAM
+systemd   145807           ubuntu   18u     unix 0xffff89caeb634000      0t0     944782 type=DGRAM
+systemd   145807           ubuntu   19u     unix 0xffff89caeb635800      0t0     944783 /run/user/1000/systemd/private type=STREAM
+systemd   145807           ubuntu   20u     unix 0xffff89caeb635c00      0t0     944784 type=STREAM
+systemd   145807           ubuntu   21u  a_inode               0,14        0      10376 [timerfd]
+systemd   145807           ubuntu   26u     unix 0xffff89c950334c00      0t0     944790 /run/user/1000/gnupg/S.dirmngr type=STREAM
+systemd   145807           ubuntu   27u     unix 0xffff89c950335800      0t0     944791 /run/user/1000/gnupg/S.gpg-agent.browser type=STREAM
+systemd   145807           ubuntu   28u     unix 0xffff89c950335c00      0t0     944792 /run/user/1000/gnupg/S.gpg-agent.extra type=STREAM
+systemd   145807           ubuntu   29u     unix 0xffff89c950334800      0t0     944793 /run/user/1000/gnupg/S.gpg-agent.ssh type=STREAM
+systemd   145807           ubuntu   30u     unix 0xffff89c950335000      0t0     944794 /run/user/1000/gnupg/S.gpg-agent type=STREAM
+systemd   145807           ubuntu   31u     unix 0xffff89c950334000      0t0     944795 /run/user/1000/pk-debconf-socket type=STREAM
+systemd   145807           ubuntu   32u     unix 0xffff89c950335400      0t0     944796 /run/user/1000/snapd-session-agent.socket type=STREAM
