@@ -14,26 +14,6 @@ ls      148658 p.dalton    5u     IPv6 959366      0t0    TCP *:http-alt (LISTEN
 ls      148658 p.dalton    7u  a_inode   0,14        0  10376 [eventpoll]
 ls      148658 p.dalton    8r     FIFO   0,13      0t0 959367 pipe
 ls      148658 p.dalton    9w     FIFO   0,13      0t0 959367 pipe
-COMMAND   PID USER   FD      TYPE             DEVICE SIZE/OFF   NODE NAME
-snapd   25680 root  cwd       DIR                8,1     4096      2 /
-snapd   25680 root  rtd       DIR                8,1     4096      2 /
-snapd   25680 root  txt       REG                8,1 30955760  16810 /usr/lib/snapd/snapd
-snapd   25680 root  DEL       REG                8,1            3467 /usr/lib/x86_64-linux-gnu/libresolv-2.31.so
-snapd   25680 root  DEL       REG                8,1            3460 /usr/lib/x86_64-linux-gnu/libnss_dns-2.31.so
-snapd   25680 root  DEL       REG                8,1            3461 /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
-snapd   25680 root  DEL       REG                8,1            3453 /usr/lib/x86_64-linux-gnu/libc-2.31.so
-snapd   25680 root  DEL       REG                8,1            3466 /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
-snapd   25680 root  DEL       REG                8,1            3449 /usr/lib/x86_64-linux-gnu/ld-2.31.so
-snapd   25680 root    0r      CHR                1,3      0t0      6 /dev/null
-snapd   25680 root    1u     unix 0xffff89caeb601c00      0t0 120340 type=STREAM
-snapd   25680 root    2u     unix 0xffff89caeb601c00      0t0 120340 type=STREAM
-snapd   25680 root    3u     unix 0xffff89ca3c94c800      0t0 120744 type=STREAM
-snapd   25680 root    5u     unix 0xffff89ca41db5000      0t0 120154 /run/snapd.socket type=STREAM
-snapd   25680 root    6u  a_inode               0,14        0  10376 [eventpoll]
-snapd   25680 root    7u     unix 0xffff89ca41db5400      0t0 120155 /run/snapd-snap.socket type=STREAM
-snapd   25680 root    8u  netlink                         0t0 121049 KOBJECT_UEVENT
-snapd   25680 root    9r     FIFO               0,13      0t0 121050 pipe
-snapd   25680 root   10w     FIFO               0,13      0t0 121050 pipe
 COMMAND      PID             USER   FD      TYPE             DEVICE SIZE/OFF       NODE NAME
 systemd        1             root  cwd       DIR                8,1     4096          2 /
 systemd        1             root  rtd       DIR                8,1     4096          2 /
@@ -100,49 +80,49 @@ systemd        1             root   24u  a_inode               0,14        0    
 systemd        1             root   25u  a_inode               0,14        0      10376 bpf-prog
 systemd        1             root   26r      CHR             10,235      0t0        359 /dev/autofs
 systemd        1             root   28u  a_inode               0,14        0      10376 [timerfd]
-systemd        1             root   32u     unix 0xffff89cae7e3b400      0t0      13439 /run/systemd/notify type=DGRAM
-systemd        1             root   35u     unix 0xffff89cae7e3b000      0t0      13440 type=DGRAM
-systemd        1             root   36u     unix 0xffff89cae7e3bc00      0t0      13441 type=DGRAM
-systemd        1             root   37u     unix 0xffff89cae8728000      0t0     113382 type=DGRAM
-systemd        1             root   38u     unix 0xffff89cae8729c00      0t0     113383 type=DGRAM
-systemd        1             root   39r     FIFO               0,13      0t0      13452 pipe
-systemd        1             root   40u     unix 0xffff89cae7e39c00      0t0      13474 /run/udev/control type=SEQPACKET
-systemd        1             root   41u     unix 0xffff89cae7e38400      0t0      13469 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   42u     unix 0xffff89cae7e39800      0t0      13471 /run/systemd/journal/socket type=DGRAM
-systemd        1             root   43u  netlink                         0t0      13473 ROUTE
-systemd        1             root   44u     unix 0xffff89cae7e3ac00      0t0      13454 /run/lvm/lvmpolld.socket type=STREAM
+systemd        1             root   32u     unix 0xffff89cae9d91c00      0t0    1247324 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   38u     unix 0xffff89cae7e3b400      0t0      13439 /run/systemd/notify type=DGRAM
+systemd        1             root   39u     unix 0xffff89cae7e3b000      0t0      13440 type=DGRAM
+systemd        1             root   40u     unix 0xffff89cae7e3bc00      0t0      13441 type=DGRAM
+systemd        1             root   41u     unix 0xffff89cae8728000      0t0     113382 type=DGRAM
+systemd        1             root   42u     unix 0xffff89cae8729c00      0t0     113383 type=DGRAM
+systemd        1             root   43r     FIFO               0,13      0t0      13452 pipe
+systemd        1             root   44u     unix 0xffff89cae7e39c00      0t0      13474 /run/udev/control type=SEQPACKET
 systemd        1             root   45u     unix 0xffff89caeb600400      0t0      14210 type=DGRAM
 systemd        1             root   46u  netlink                         0t0      14211 AUDIT
-systemd        1             root   47u      CHR             10,242      0t0          4 /dev/rfkill
-systemd        1             root   48u     unix 0xffff89cae72ef000      0t0      20107 /run/dbus/system_bus_socket type=STREAM
-systemd        1             root   49u     FIFO               0,25      0t0        275 /run/initctl
-systemd        1             root   50u     unix 0xffff89cae8729800      0t0      84543 /var/snap/lxd/common/lxd/unix.socket type=STREAM
-systemd        1             root   51u     FIFO               0,25      0t0        268 /run/dmeventd-server
-systemd        1             root   52u     FIFO               0,25      0t0        269 /run/dmeventd-client
-systemd        1             root   53u  netlink                         0t0      13476 KOBJECT_UEVENT
-systemd        1             root   55u     unix 0xffff89caea84c400      0t0      20145 /run/uuidd/request type=STREAM
+systemd        1             root   47u     unix 0xffff89cae7e38400      0t0      13469 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   48u     unix 0xffff89cae7e39800      0t0      13471 /run/systemd/journal/socket type=DGRAM
+systemd        1             root   49u  netlink                         0t0      13473 ROUTE
+systemd        1             root   50u     unix 0xffff89cae7e3ac00      0t0      13454 /run/lvm/lvmpolld.socket type=STREAM
+systemd        1             root   51u      CHR             10,242      0t0          4 /dev/rfkill
+systemd        1             root   52u     unix 0xffff89cae72ef000      0t0      20107 /run/dbus/system_bus_socket type=STREAM
+systemd        1             root   53u     FIFO               0,25      0t0        275 /run/initctl
+systemd        1             root   55u     unix 0xffff89cae8729800      0t0      84543 /var/snap/lxd/common/lxd/unix.socket type=STREAM
 systemd        1             root   56u  a_inode               0,14        0      10376 [timerfd]
-systemd        1             root   57u  netlink                         0t0      13466 AUDIT
-systemd        1             root   58u     unix 0xffff89ca41db5000      0t0     120154 /run/snapd.socket type=STREAM
+systemd        1             root   57u     FIFO               0,25      0t0        268 /run/dmeventd-server
+systemd        1             root   58u     FIFO               0,25      0t0        269 /run/dmeventd-client
 systemd        1             root   65u     unix 0xffff89cae7e38800      0t0      20529 type=STREAM
-systemd        1             root   66u     unix 0xffff89ca41db5400      0t0     120155 /run/snapd-snap.socket type=STREAM
-systemd        1             root   68u     unix 0xffff89cae8c08800      0t0     113585 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   69u     unix 0xffff89caea84d400      0t0      22508 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   85u     unix 0xffff89cae9730c00      0t0      21406 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   86u     unix 0xffff89cae9731000      0t0      21253 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   87u     unix 0xffff89cae9ddfc00      0t0      20928 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   88u     unix 0xffff89cae9d91800      0t0      20600 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   89u     unix 0xffff89caea84cc00      0t0      20296 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   91u     unix 0xffff89caeb600000      0t0      19249 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   92u     unix 0xffff89cae72ee000      0t0      17864 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   93u     unix 0xffff89caeb682800      0t0      16915 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   94u     unix 0xffff89caeb601000      0t0      15032 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   95u     unix 0xffff89ca3c94c400      0t0     120341 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   97u     unix 0xffff89caeaa5e800      0t0     169671 /run/systemd/journal/stdout type=STREAM
-systemd        1             root   99u     unix 0xffff89cae72ee800      0t0     175552 /run/systemd/journal/stdout type=STREAM
-systemd        1             root  101u     unix 0xffff89cac85bc800      0t0     181011 /run/systemd/journal/stdout type=STREAM
-systemd        1             root  104u     unix 0xffff89cac84ab400      0t0     181248 /run/systemd/journal/stdout type=STREAM
-systemd        1             root  105u     unix 0xffff89caeb600800      0t0     944709 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   66u  netlink                         0t0      13476 KOBJECT_UEVENT
+systemd        1             root   68u     unix 0xffff89caea84c400      0t0      20145 /run/uuidd/request type=STREAM
+systemd        1             root   69u  netlink                         0t0      13466 AUDIT
+systemd        1             root   85u     unix 0xffff89ca41db5000      0t0     120154 /run/snapd.socket type=STREAM
+systemd        1             root   86u     unix 0xffff89ca41db5400      0t0     120155 /run/snapd-snap.socket type=STREAM
+systemd        1             root   87u     unix 0xffff89cae8c08800      0t0     113585 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   88u     unix 0xffff89caea84d400      0t0      22508 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   89u     unix 0xffff89cae9730c00      0t0      21406 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   91u     unix 0xffff89cae9731000      0t0      21253 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   92u     unix 0xffff89cae9ddfc00      0t0      20928 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   93u     unix 0xffff89cae9d91800      0t0      20600 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   94u     unix 0xffff89caea84cc00      0t0      20296 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   95u     unix 0xffff89caeb600000      0t0      19249 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   97u     unix 0xffff89cae72ee000      0t0      17864 /run/systemd/journal/stdout type=STREAM
+systemd        1             root   99u     unix 0xffff89caeb682800      0t0      16915 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  101u     unix 0xffff89caeb601000      0t0      15032 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  105u     unix 0xffff89caeaa5e800      0t0     169671 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  118u     unix 0xffff89cae72ee800      0t0     175552 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  119u     unix 0xffff89cac85bc800      0t0     181011 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  120u     unix 0xffff89cac84ab400      0t0     181248 /run/systemd/journal/stdout type=STREAM
+systemd        1             root  121u     unix 0xffff89caeb600800      0t0     944709 /run/systemd/journal/stdout type=STREAM
 systemd        1             root  122u     unix 0xffff89cae7e3a400      0t0      13456 @/org/kernel/linux/storage/multipathd type=STREAM
 systemd        1             root  123u     unix 0xffff89cae7e3b800      0t0      13457 /run/systemd/journal/syslog type=DGRAM
 systemd        1             root  124u     unix 0xffff89cae7e38000      0t0      13459 /run/systemd/fsck.progress type=STREAM
@@ -232,7 +212,7 @@ systemd-j    345             root   24u     unix 0xffff89cae72ee000      0t0    
 systemd-j    345             root   25u     unix 0xffff89caea84d400      0t0      22508 /run/systemd/journal/stdout type=STREAM
 systemd-j    345             root   26u     unix 0xffff89cac85bc800      0t0     181011 /run/systemd/journal/stdout type=STREAM
 systemd-j    345             root   27u     unix 0xffff89cae9d91800      0t0      20600 /run/systemd/journal/stdout type=STREAM
-systemd-j    345             root   28u     unix 0xffff89ca3c94c400      0t0     120341 /run/systemd/journal/stdout type=STREAM
+systemd-j    345             root   28u     unix 0xffff89cae9d91c00      0t0    1247324 /run/systemd/journal/stdout type=STREAM
 systemd-j    345             root   29u     unix 0xffff89cae9731000      0t0      21253 /run/systemd/journal/stdout type=STREAM
 systemd-j    345             root   30u     unix 0xffff89cae9ddfc00      0t0      20928 /run/systemd/journal/stdout type=STREAM
 systemd-j    345             root   31u     unix 0xffff89cae9730c00      0t0      21406 /run/systemd/journal/stdout type=STREAM
@@ -461,7 +441,6 @@ systemd-l    725             root   15u  a_inode               0,14        0    
 systemd-l    725             root   16u      CHR              13,64      0t0        144 /dev/input/event0
 systemd-l    725             root   17u      CHR              13,65      0t0        145 /dev/input/event1
 systemd-l    725             root   18u      CHR                4,6      0t0         27 /dev/tty6
-systemd-l    725             root   19r     FIFO               0,25      0t0        844 /run/systemd/sessions/919.ref
 systemd-n  36633  systemd-network  cwd       DIR                8,1     4096          2 /
 systemd-n  36633  systemd-network  rtd       DIR                8,1     4096          2 /
 systemd-n  36633  systemd-network  txt       REG                8,1  2241536       3324 /usr/lib/systemd/systemd-networkd
