@@ -40,7 +40,7 @@ foreach ($u in $drop_urls) {
 
 # Array containing the filename
 
-$input_paths = @('Week11\class\compromised-ips.txt', 'Week11\class\emerging-botcc.rules')
+$input_paths = @('.\compromised-ips.txt', '.\emerging-botcc.rules')
 
 # Extract IP addressess
 
@@ -52,19 +52,29 @@ Select-string -Path $input_paths -Pattern $regex_drop | `
 
 ForEach-Object { $_.Matches } | `
 
-ForEach-Object { $_.Value } | Sort-Object | ` 
+ForEach-Object { $_.Value } | Sort-Object | Get-Unique | `
 
-Get-Unique | `
+Out-File -FilePath "ips-bad.tmp"
 
-Out-File -FilePath "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\ips-bad.tmp"
-
-# Get the IP addresses discovered, loop through and replace the beginning of the liune with the IPTables syntax
+# Get the IP addresses discovered, loop through and replace the beginning of the line with the IPTables syntax
 # After the IP address, add the remaining IPTables syntax and save the results to a file. 
 
 # iptables -A INPUT -s IP -j DROP
 
-(Get-Content -Path "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\ips-bad.tmp") | % `
+(Get-Content -Path ".\ips-bad.tmp") | % `
 
-{ $_ -replace "^","iptables -A INPUT -s " -replace "$", " -j DROP"} | `
+{ $_ -replace "^", "iptables - A INPUT -s " -replace "$", "-j DROP" }
 
-Out-File -FilePath "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\iptables.bash"
+Out-File -FilePath "iptables.bash"
+
+# $ips = Get-Content -Path "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\ips-bad.tmp"
+
+# ForEach ($file in $ips) {
+
+#     $_ -replace "^","iptables -A INPUT -s " -replace "$ips", " -j DROP" | `
+
+# Out-File -FilePath "iptables.bash"
+
+
+
+# }
