@@ -61,20 +61,22 @@ Out-File -FilePath "ips-bad.tmp"
 
 # iptables -A INPUT -s IP -j DROP
 
-(Get-Content -Path ".\ips-bad.tmp") | % `
-
-{ $_ -replace "^", "iptables - A INPUT -s " -replace "$", "-j DROP" }
-
+(Get-Content -Path "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\ips-bad.tmp") | % `
+{ $_ -replace "^", "iptables -A INPUT -s " -replace "$", " -j DROP" } | `
 Out-File -FilePath "iptables.bash"
 
-# $ips = Get-Content -Path "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\ips-bad.tmp"
 
-# ForEach ($file in $ips) {
+#Out-File -FilePath "iptables.bash"
 
-#     $_ -replace "^","iptables -A INPUT -s " -replace "$ips", " -j DROP" | `
+#$ips = Get-Content -Path "C:\Users\Asani-Web\Documents\Vessup_SYS-320\Week11\Class\ips-bad.tmp"
 
-# Out-File -FilePath "iptables.bash"
+#$ips
 
+#  ForEach ($file in $ips) {
 
+#      $_ -replace "^","iptables -A INPUT -s " -replace "$", " -j DROP" `
 
+     
 # }
+
+#Out-File -FilePath "iptables.bash"
